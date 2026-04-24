@@ -14,48 +14,34 @@
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.5;
-            position: relative;
+            line-height: 1.6;
         }
         .container {
             width: 100%;
             min-height: 297mm;
-            padding-bottom: 100px; /* Espaço para o rodapé */
         }
         
-        /* Header Banner */
+        /* Header */
         .header {
             background-color: #00A859;
             color: white;
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .header h1 {
-            margin: 0;
-            font-size: 28pt;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .header p {
-            margin: 10px 0 0;
-            font-size: 12pt;
-            opacity: 0.9;
-        }
+        .header h1 { margin: 0; font-size: 28pt; text-transform: uppercase; letter-spacing: 1px; }
+        .header p { margin: 10px 0 0; font-size: 13pt; opacity: 0.9; }
         
-        .content {
-            padding: 40px;
-        }
+        .content { padding: 40px; }
 
-        /* Table Styling */
         h2 {
             color: #00A859;
-            border-left: 6px solid #00A859;
+            border-left: 5px solid #00A859;
             padding-left: 15px;
-            font-size: 18pt;
-            margin-bottom: 25px;
+            margin-top: 30px;
         }
-        
+
+        /* Tabela Resumo */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -65,154 +51,194 @@
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        th {
-            background-color: #00A859;
-            color: white;
-            text-align: left;
-            padding: 15px;
-            font-size: 10pt;
-            text-transform: uppercase;
-        }
-        td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-            font-size: 10pt;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+        th { background-color: #f1f1f1; color: #444; padding: 15px; text-align: left; font-size: 9pt; text-transform: uppercase; border-bottom: 2px solid #00A859; }
+        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 10pt; }
         
-        .price {
-            font-weight: bold;
-            color: #1a7a3b;
-            white-space: nowrap;
+        /* Cards Detalhados Comparativos */
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
         }
-
-        /* Product Cards Section */
         .card {
             background: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #e1e4e8;
-            page-break-inside: avoid;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            position: relative;
         }
-        .card h3 {
-            margin-top: 0;
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .card-title {
             color: #00A859;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
+            margin: 0;
+            font-size: 16pt;
         }
         .card-tag {
-            display: inline-block;
             background: #eafff2;
             color: #00A859;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 9pt;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 8pt;
             font-weight: bold;
-            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .spec-item {
+            font-size: 9.5pt;
+        }
+        .spec-label {
+            font-weight: bold;
+            color: #666;
+            display: block;
+            font-size: 8.5pt;
+            text-transform: uppercase;
+        }
+        .comparison-note {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            font-style: italic;
+            font-size: 9pt;
+            color: #555;
+            border-left: 3px solid #ccc;
         }
 
-        /* WhatsApp Flutuante - Apenas visível no HTML (web) */
+        /* WhatsApp Flutuante (63) */
         .whatsapp-float {
             position: fixed;
             width: 60px;
             height: 60px;
-            bottom: 40px;
-            right: 40px;
+            bottom: 30px;
+            right: 30px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
             text-decoration: none;
         }
 
-        /* Rodapé */
+        /* Rodapé Subliminar (48) */
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: #1a1a1a;
+            color: #777;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
+            padding: 50px 20px;
+            font-size: 10pt;
         }
-        .footer p {
-            margin: 5px 0;
-            font-size: 11pt;
+        .footer a {
+            color: #777;
+            text-decoration: none;
         }
-        .footer .cta {
-            font-weight: bold;
-            color: #25d366;
-            font-size: 13pt;
-        }
-        
-        @media print {
-            .whatsapp-float { display: none; }
-            .footer { position: relative; bottom: 0; width: 100%; }
+        .footer a:hover {
+            color: #00A859;
         }
     </style>
 </head>
 <body>
-    <!-- Botão WhatsApp Flutuante (Funciona no navegador) -->
-    <a href="https://wa.me/5548996390391" class="whatsapp-float" target="_blank">
-        <svg style="width:30px;height:30px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.54 3.34 17.06L2 22L7.1 20.69C8.56 21.54 10.28 22 12.04 22C17.5 22 22 17.5 22 12.04C22 10.25 21.3 8.58 20.03 7.31C18.77 6.05 17.1 5.35 15.31 5.35C15.3 5.35 15.3 5.35 15.3 5.35C12.04 2 12.04 2 12.04 2M15.31 6.74C16.73 6.74 18.06 7.3 19.06 8.3C20.06 9.3 20.62 10.63 20.62 12.05C20.62 16.78 16.77 20.62 12.04 20.62C10.5 20.62 9 20.21 7.71 19.45L7.4 19.27L4.35 20.06L5.16 17.11L4.96 16.79C4.13 15.47 3.69 13.94 3.69 12.05C3.69 7.31 7.54 3.47 12.27 3.47C12.28 3.47 12.28 3.47 12.29 3.47C13.4 6.74 15.31 6.74 15.31 6.74M9.5 8.26C9.33 8.26 9.06 8.32 8.84 8.56C8.61 8.8 8 9.4 8 10.62C8 11.85 8.89 13.03 9 13.2C9.13 13.37 10.73 15.84 13.2 16.9C13.78 17.15 14.23 17.3 14.59 17.41C15.18 17.6 15.71 17.57 16.14 17.51C16.62 17.44 17.62 16.9 17.83 16.31C18.04 15.72 18.04 15.22 17.97 15.11C17.91 15 17.75 14.94 17.5 14.82C17.25 14.7 16.03 14.1 15.8 14.03C15.58 13.94 15.41 13.9 15.25 14.15C15.08 14.4 14.61 14.94 14.47 15.11C14.33 15.28 14.2 15.3 13.94 15.17C13.69 15.05 12.89 14.79 11.94 13.94C11.19 13.27 10.68 12.44 10.54 12.19C10.39 11.94 10.52 11.8 10.65 11.68C10.76 11.57 10.89 11.39 11.03 11.23C11.16 11.07 11.21 10.94 11.3 10.77C11.38 10.6 11.34 10.45 11.28 10.32C11.21 10.2 10.66 8.87 10.43 8.33C10.21 7.79 9.99 7.87 9.83 7.86C9.69 7.86 9.5 7.86 9.5 7.86V8.26Z" />
-        </svg>
+    <a href="https://wa.me/556332339412" class="whatsapp-float" target="_blank">
+        <svg style="width:32px;height:32px" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.54 3.34 17.06L2 22L7.1 20.69C8.56 21.54 10.28 22 12.04 22C17.5 22 22 17.5 22 12.04C22 10.25 21.3 8.58 20.03 7.31C18.77 6.05 17.1 5.35 15.31 5.35C15.3 5.35 15.3 5.35 15.3 5.35C12.04 2 12.04 2 12.04 2M15.31 6.74C16.73 6.74 18.06 7.3 19.06 8.3C20.06 9.3 20.62 10.63 20.62 12.05C20.62 16.78 16.77 20.62 12.04 20.62C10.5 20.62 9 20.21 7.71 19.45L7.4 19.27L4.35 20.06L5.16 17.11L4.96 16.79C4.13 15.47 3.69 13.94 3.69 12.05C3.69 7.31 7.54 3.47 12.27 3.47C12.28 3.47 12.28 3.47 12.29 3.47C13.4 6.74 15.31 6.74 15.31 6.74M9.5 8.26C9.33 8.26 9.06 8.32 8.84 8.56C8.61 8.8 8 9.4 8 10.62C8 11.85 8.89 13.03 9 13.2C9.13 13.37 10.73 15.84 13.2 16.9C13.78 17.15 14.23 17.3 14.59 17.41C15.18 17.6 15.71 17.57 16.14 17.51C16.62 17.44 17.62 16.9 17.83 16.31C18.04 15.72 18.04 15.22 17.97 15.11C17.91 15 17.75 14.94 17.5 14.82C17.25 14.7 16.03 14.1 15.8 14.03C15.58 13.94 15.41 13.9 15.25 14.15C15.08 14.4 14.61 14.94 14.47 15.11C14.33 15.28 14.2 15.3 13.94 15.17C13.69 15.05 12.89 14.79 11.94 13.94C11.19 13.27 10.68 12.44 10.54 12.19C10.39 11.94 10.52 11.8 10.65 11.68C10.76 11.57 10.89 11.39 11.03 11.23C11.16 11.07 11.21 10.94 11.3 10.77C11.38 10.6 11.34 10.45 11.28 10.32C11.21 10.2 10.66 8.87 10.43 8.33C10.21 7.79 9.99 7.87 9.83 7.86C9.69 7.86 9.5 7.86 9.5 7.86V8.26Z" /></svg>
     </a>
 
     <div class="container">
         <div class="header">
-            <h1>Catálogo de Rádios Intelbras</h1>
-            <p>Soluções Profissionais de Comunicação</p>
+            <h1>Portfólio de Radiocomunicação</h1>
+            <p>Classificações Técnicas e Guia Comparativo Intelbras</p>
         </div>
 
         <div class="content">
-            <h2>Tabela de Preços e Categorias</h2>
+            <h2>Resumo de Investimento</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Modelo</th>
-                        <th>Preço</th>
-                        <th>Categoria</th>
-                        <th>Diferencial</th>
+                        <th>Classificação</th>
+                        <th>Diferencial Estratégico</th>
+                        <th>Valor</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>RC 3002 UNI</td><td class="price">R$ 185,31</td><td>Entrada</td><td>Custo-benefício</td></tr>
-                    <tr><td>RC 3002 G2</td><td class="price">R$ 370,62</td><td>Intermediário</td><td>Autonomia</td></tr>
-                    <tr><td>RPA 60001</td><td class="price">R$ 534,48</td><td>Profissional</td><td>Robustez</td></tr>
-                    <tr><td>RC 4002 G2</td><td class="price">R$ 548,01</td><td>Profissional</td><td>Ergonomia</td></tr>
-                    <tr><td>RC 6 MINI</td><td class="price">R$ 549,50</td><td>Ultra Compacto</td><td>Discrição</td></tr>
-                    <tr><td>RC 4102 IP67</td><td class="price">R$ 788,42</td><td>Especial</td><td>À prova d'água</td></tr>
-                    <tr><td>RPD 6S</td><td class="price">R$ 1.079,00</td><td>Digital</td><td>Segurança</td></tr>
-                    <tr><td>RPD 8 UHF</td><td class="price">R$ 1.239,00</td><td>Topo de Linha</td><td>Display/Gestão</td></tr>
+                    <tr><td>RC 3002 UNI</td><td>Entrada Analógica</td><td>Operação Simplificada</td><td>R$ 185,31</td></tr>
+                    <tr><td>RC 6 MINI</td><td>Ultra Compacto</td><td>Discrição Total</td><td>R$ 549,50</td></tr>
+                    <tr><td>RC 4102 IP67</td><td>Especialista Água</td><td>Submersível e Flutuante</td><td>R$ 788,42</td></tr>
+                    <tr><td>RPD 6S</td><td>Digital Profissional</td><td>Áudio Limpo / Criptografia</td><td>R$ 1.079,00</td></tr>
+                    <tr><td>RPD 8 UHF</td><td>Digital Avançado</td><td>Gestão com Teclado e Visor</td><td>R$ 1.239,00</td></tr>
                 </tbody>
             </table>
 
-            <h2>Destaques por Categoria</h2>
+            <h2>Análise Detalhada dos Cards</h2>
+
             <div class="card">
-                <span class="card-tag">PROTEÇÃO IP67</span>
-                <h3>Linha à Prova D'água</h3>
-                <p>O modelo RC 4102 é ideal para ambientes com piscina, mar ou chuva intensa. Além de resistente, ele flutua na água.</p>
+                <div class="card-header">
+                    <h3 class="card-title">Série RC 3002 UNI / G2</h3>
+                    <span class="card-tag">Linha Comercial</span>
+                </div>
+                <div class="specs-grid">
+                    <div class="spec-item"><span class="spec-label">Tecnologia</span>Analógica (Simples)</div>
+                    <div class="spec-item"><span class="spec-label">Uso Ideal</span>Varejo, Hotéis, Uso Doméstico</div>
+                    <div class="spec-item"><span class="spec-label">Bateria</span>Litio (Recarga via USB)</div>
+                    <div class="spec-item"><span class="spec-label">Canais</span>16 Canais pré-configurados</div>
+                </div>
+                <div class="comparison-note">
+                    <strong>Comparativo:</strong> Comparado ao RPD, possui áudio com chiado natural da frequência analógica, mas vence no custo-benefício para curta distância.
+                </div>
             </div>
 
             <div class="card">
-                <span class="card-tag">TECNOLOGIA DMR</span>
-                <h3>Comunicação Digital</h3>
-                <p>Os modelos RPD entregam áudio cristalino e maior privacidade através de criptografia de voz.</p>
+                <div class="card-header">
+                    <h3 class="card-title">Rádios Digitais RPD 6S / RPD 8</h3>
+                    <span class="card-tag">Linha Corporativa</span>
+                </div>
+                <div class="specs-grid">
+                    <div class="spec-item"><span class="spec-label">Tecnologia</span>Digital DMR (Tier II)</div>
+                    <div class="spec-item"><span class="spec-label">Segurança</span>Criptografia Avançada</div>
+                    <div class="spec-item"><span class="spec-label">Áudio</span>Eliminação de ruídos externos</div>
+                    <div class="spec-item"><span class="spec-label">Autonomia</span>40% maior que os analógicos</div>
+                </div>
+                <div class="comparison-note">
+                    <strong>Comparativo:</strong> Enquanto o RC 3002 sofre interferências, o RPD garante voz limpa e 2 conversas simultâneas na mesma frequência física.
+                </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">RC 4102 IP67 (Water Proof)</h3>
+                    <span class="card-tag">Resistência Máxima</span>
+                </div>
+                <div class="specs-grid">
+                    <div class="spec-item"><span class="spec-label">Proteção</span>IP67 (Submersível a 1m)</div>
+                    <div class="spec-item"><span class="spec-label">Extra</span>Flutua na água + Lanterna</div>
+                    <div class="spec-item"><span class="spec-label">Alcance</span>Focado em áreas abertas</div>
+                    <div class="spec-item"><span class="spec-label">Indicação</span>Clubes, Marinas e Defesa Civil</div>
+                </div>
+                <div class="comparison-note">
+                    <strong>Comparativo:</strong> Diferente de toda a linha, este é o único que sobrevive a quedas acidentais em piscinas ou rios sem danificar o circuito.
+                </div>
+            </div>
+
         </div>
 
         <div class="footer">
-            <p class="cta">Sua empresa precisa de um site elegante, moderno e apresentação do seu trabalho?</p>
-            <p style="font-size: 16pt; margin-top: 10px;">📞 <strong>48 99639-0391</strong></p>
-            <p style="opacity: 0.7; font-size: 9pt; margin-top: 20px;">© 2024 - Todos os direitos reservados</p>
+            <p>Elevando o padrão da sua presença digital.</p>
+            <p><a href="https://wa.me/5548996390391" target="_blank">Consultoria em apresentações de alto impacto: (48) 99639-0391</a></p>
         </div>
     </div>
 </body>
