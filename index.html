@@ -1,1 +1,211 @@
 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            background-color: #f4f7f9;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.5;
+        }
+        .container {
+            width: 100%;
+            min-height: 297mm;
+        }
+        /* Header Banner */
+        .header {
+            background-color: #0056b3;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 12pt;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+
+        /* Table Styling */
+        h2 {
+            color: #0056b3;
+            border-left: 6px solid #0056b3;
+            padding-left: 15px;
+            font-size: 18pt;
+            margin-bottom: 25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-size: 10pt;
+            text-transform: uppercase;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 10pt;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f5f9;
+        }
+        .price {
+            font-weight: bold;
+            color: #28a745;
+            white-space: nowrap;
+        }
+
+        /* Product Cards Section */
+        .product-grid {
+            display: block;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e1e4e8;
+            page-break-inside: avoid;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #0056b3;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .card-tag {
+            display: inline-block;
+            background: #e7f1ff;
+            color: #0056b3;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        
+        /* Footer/Article Section */
+        .article {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-top: 4px solid #0056b3;
+        }
+        .article h2 { border: none; padding: 0; margin-top: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Orçamento de Rádios Intelbras</h1>
+            <p>Guia de Comparação e Especificações Técnicas</p>
+        </div>
+
+        <div class="content">
+            <h2>Comparativo de Modelos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                        <th>Diferencial</th>
+                        <th>Aplicação Ideal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>RC 3002 UNI</td><td class="price">R$ 185,31</td><td>Entrada (Analógico)</td><td>Custo-benefício</td><td>Pequenos comércios e uso doméstico.</td></tr>
+                    <tr><td>RC 3002 G2</td><td class="price">R$ 370,62</td><td>Intermediário</td><td>Autonomia de bateria</td><td>Depósitos, lojas e segurança patrimonial.</td></tr>
+                    <tr><td>RPA 60001</td><td class="price">R$ 534,48</td><td>Profissional Analógico</td><td>Robustez e alcance</td><td>Condomínios e obras de médio porte.</td></tr>
+                    <tr><td>RC 4002 G2</td><td class="price">R$ 548,01</td><td>Profissional Analógico</td><td>Ergonomia e áudio claro</td><td>Eventos e equipes de logística.</td></tr>
+                    <tr><td>RC 6 MINI</td><td class="price">R$ 549,50</td><td>Ultra Compacto</td><td>Tamanho discreto</td><td>Hotéis, clínicas e restaurantes de luxo.</td></tr>
+                    <tr><td>RC 4102 IP67</td><td class="price">R$ 788,42</td><td>Especial (À prova d'água)</td><td>Proteção contra imersão</td><td>Clubes, esportes náuticos e áreas externas.</td></tr>
+                    <tr><td>RPD 6S</td><td class="price">R$ 1.079,00</td><td>Profissional Digital</td><td>Comunicação segura</td><td>Indústrias e segurança pública/privada.</td></tr>
+                    <tr><td>RPD 8 UHF</td><td class="price">R$ 1.239,00</td><td>Topo de Linha (Digital)</td><td>Funções avançadas/Display</td><td>Gestão de frotas e operações complexas.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Detalhamento Funcional</h2>
+            
+            <div class="card">
+                <span class="card-tag">SÉRIE RC</span>
+                <h3>Linha de Entrada e Intermediária (RC 3002 UNI / G2)</h3>
+                <p>Equipamentos focados em praticidade para usuários que necessitam de comunicação imediata.</p>
+                <ul>
+                    <li><strong>Canais:</strong> Operação em 16 canais.</li>
+                    <li><strong>Facilidade:</strong> Carregamento via USB.</li>
+                    <li><strong>Funções:</strong> Scan de monitoramento de frequências.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">RESISTÊNCIA TOTAL</span>
+                <h3>Linha Especialista (RC 4102 IP67)</h3>
+                <p>O rádio para condições extremas, ideal para ambientes úmidos ou poeirentos.</p>
+                <ul>
+                    <li><strong>Certificação IP67:</strong> Suporta imersão em água por tempo determinado.</li>
+                    <li><strong>Segurança:</strong> Equipamento flutuante com lanterna LED integrada.</li>
+                    <li><strong>Uso:</strong> Perfeito para esportes náuticos e áreas externas.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">TECNOLOGIA DIGITAL</span>
+                <h3>Linha Premium Digital (RPD 6S / RPD 8)</h3>
+                <p>O ápice da tecnologia em radiocomunicação para máxima segurança e clareza.</p>
+                <ul>
+                    <li><strong>Criptografia:</strong> Voz protegida contra interceptações.</li>
+                    <li><strong>Áudio Digital:</strong> Filtra ruídos de fundo automaticamente.</li>
+                    <li><strong>Recursos RPD 8:</strong> Display LCD e teclado para mensagens de texto e chamadas privadas.</li>
+                </ul>
+            </div>
+
+            <div class="article">
+                <h2>Artigo: A Eficiência Intelbras</h2>
+                <p>A escolha do rádio comunicador ideal vai além do preço; trata-se de garantir a continuidade da operação. Todos os modelos Intelbras são homologados pela <strong>ANATEL</strong>, o que garante conformidade legal e técnica.</p>
+                <p>Para empresas em crescimento, a migração do analógico para o digital (Linha RPD) representa um salto em produtividade, permitindo comunicações mais claras em ambientes ruidosos e maior eficiência no uso de canais.</p>
+                <p><strong>Acessórios:</strong> O uso de baterias originais, fones e cabos de programação é fundamental para manter a vida útil e a performance do seu parque de equipamentos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
